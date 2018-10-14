@@ -1,5 +1,3 @@
-package pandcinrecursion;
-
 public class Sudokulearning {
 
 	
@@ -16,6 +14,17 @@ public class Sudokulearning {
         int[] rownos=new int[9];
 		int[] colnos=new int[9];
 		int[] sbnos=new int[9];
+		System.out.println("Checkout the Given Sudoku Matrix Array:");
+
+		for(int a = 0; a<arr.length; a++){
+			for (int b=0;b <arr[0].length;b++ ) {
+				System.out.print(arr[a][b]+" ");
+			}
+			System.out.print("\n");
+		}
+		System.out.print("\n");
+
+		System.out.println("Solved Matrix:");
 		for(int i=0;i<arr.length;i++){
 			for(int j=0;j<arr[0].length;j++){
 				if(arr[i][j]!=0){
